@@ -102,8 +102,16 @@ const choices = () =>
 //initalize programme
 async function startUp(){
     await managerQuestions();
-    await choices();
-    
+    await choices()
+        .then(function(data){
+            if(data.choice === 'Add an engineer'){
+                console.log("1");
+            } else if(data.choice === 'Add an intern'){
+                console.log("2");
+            } else if(data.choice === 'Finish building the team'){
+                console.log("3");
+            };
+        })
 
 }
 
