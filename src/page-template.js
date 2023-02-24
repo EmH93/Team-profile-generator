@@ -1,3 +1,5 @@
+const index = require("./index.js")
+
 // creates the team
 const generateTeam = team => {
 

@@ -105,11 +105,11 @@ async function startUp(){
     await choices()
         .then(function(data){
             if(data.choice === 'Add an engineer'){
-                console.log("1");
+                engineerQuestions();
             } else if(data.choice === 'Add an intern'){
-                console.log("2");
+                internQuestions();
             } else if(data.choice === 'Finish building the team'){
-                console.log("3");
+                generateTeam()
             };
         })
 
